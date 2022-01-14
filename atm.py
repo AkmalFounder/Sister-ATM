@@ -2,7 +2,7 @@ import xmlrpc.client
 import sys
 
 
-server_ip = "117.53.45.7"
+server_ip = "127.0.0.1"
 server_port = 8008
 
 server = xmlrpc.client.Server(f'http://{server_ip}:{server_port}')
@@ -118,7 +118,8 @@ class ATM:
 
     def UI(self):
         print("SELAMAT DATANG DI ATM")
-        self.print_line_break(5)
+        self.print_border()
+        self.print_line_break(4)
         self.print_border()
         print("silahkan masukan nomor kartu anda")
         self.validasi_nomor_kartu()
