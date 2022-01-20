@@ -1,7 +1,7 @@
 from xmlrpc.server import SimpleXMLRPCServer
 import datetime
 
-server_ip = "127.0.0.1"
+server_ip = "0.0.0.0"
 server_port = 8008
 
 with SimpleXMLRPCServer((server_ip, server_port), allow_none=True) as server:
